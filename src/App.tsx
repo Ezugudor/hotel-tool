@@ -1,10 +1,12 @@
 import React from 'react';
 import { Layout } from './components';
-import { CustomerProvider } from './context';
+import { AvailableRoomsProvider, CustomerProvider } from './context';
 
-const App = () => <div className="App">
+const App: React.FunctionComponent = () => <div className="App">
   <CustomerProvider>
-    <Layout />
+    <AvailableRoomsProvider>
+      <Layout />
+    </AvailableRoomsProvider>
   </CustomerProvider>
 </div>;
 export default App;

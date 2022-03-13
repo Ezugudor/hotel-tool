@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { CustomerBids } from "../mocks/CustomerBids";
 
-export const CustomerContext = React.createContext({})
+export const CustomerContext = React.createContext<Array<number>>([])
 
 export interface CustomerProviderProps {
     children: ReactNode

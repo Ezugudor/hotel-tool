@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerRequestSummary Component Test should match with existing snapshot 1`] = `"<div><div><span class=\\"label\\">Total Requests Count: </span><span class=\\"value\\"> 0 </span></div><div><span class=\\"label\\">Total Requests Amount: </span><span class=\\"value\\"> 0 </span></div><div><span class=\\"label\\">Premium Requests Count: </span><span class=\\"value\\"> 0 </span></div><div><span class=\\"label\\">Premium Requests Amount: </span><span class=\\"value\\"> 0 </span></div><div><span class=\\"label\\">Non Premium Requests Count: </span><span class=\\"value\\"> 0 </span></div><div><span class=\\"label\\">Non Premium Requests Amount: </span><span class=\\"value\\"> 0 </span></div><div> 0 fdfd  0</div></div>"`;
