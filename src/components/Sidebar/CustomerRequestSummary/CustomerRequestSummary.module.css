@@ -1,0 +1,32 @@
+.Container{
+  
+}
+
+.RequestInfoHead{
+    
+}
+
+.RequestInfoCont{
+    border-bottom:1px solid #956cc4;
+    padding:10px
+}
+
+.RequestInfo{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+}
+
+.RILabel{
+
+}
+
+.RIValue{
+    font-weight:bold;
+    color:#fff;
+    font-size:20px
+}
+
+.RIValueCount{
+    color:#0ee89c
+}

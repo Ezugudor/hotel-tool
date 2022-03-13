@@ -1,0 +1,13 @@
+.LayMain{
+    background:#eee;
+    min-height:100vh;
+    width:100vw;
+    display:flex;
+}
+.LayLeft{
+    flex:1
+}
+
+.LayRight{
+    flex:3
+}

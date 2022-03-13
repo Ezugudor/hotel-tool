@@ -1,6 +1,7 @@
 import React, { FormEvent, useContext } from "react";
 import { AvailableRoomsContext } from "../../../context";
 import { useInput } from "../../../hooks";
+import styles from "./AvailableRoomForm.module.css";
 interface AvailableRoomFormProps {
     onSubmit?: Function
 }
@@ -20,18 +21,20 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
 
     return (
         <form onSubmit={(e) => { updateAvailableRoom(e) }}>
-            <div>
-                <div>
-                    <label htmlFor="economyRoomField">Economy :</label>
-                    <input type="text" name="economy" id="economyRoomField" {...economyField} />
+            <div className={styles.Container}>
+                <div className={styles.FormBody}>
+                    <div className={styles.FieldCont}>
+                        <label htmlFor="economyRoomField">Economy :</label>
+                        <input type="text" name="economy" id="economyRoomField" {...economyField} />
+                    </div>
+
+                    <div className={styles.FieldCont}>
+                        <label htmlFor="premiumRoomField">Premium :</label>
+                        <input type="text" name="economy" id="premiumRoomField" {...premiumField} />
+                    </div>
                 </div>
 
-                <div>
-                    <label htmlFor="premiumRoomField">Premium :</label>
-                    <input type="text" name="economy" id="premiumRoomField" {...premiumField} />
-                </div>
-
-                <button type="submit">Enter</button>
+                <button type="submit">Get Outcome</button>
             </div>
         </form>
     )
