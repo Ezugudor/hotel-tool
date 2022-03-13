@@ -1,0 +1,25 @@
+.Container{
+    background:#8b60bd;
+    height:100%;
+    padding:50px;
+    
+}
+.LogoCont{
+   padding-bottom:30px
+}
+.Header{
+   margin-bottom:60px
+}
+
+.HeaderText{
+    margin:0;
+    font-size:20px;
+    text-align:center;
+    background: #956cc4;
+    padding:20px;
+    color:#fff;
+    font-weight:normal
+}
+.RequestCont{
+    margin-bottom:100px
+}
