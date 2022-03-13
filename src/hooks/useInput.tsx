@@ -11,13 +11,7 @@ export const useInput = (intialValue: string | number = "", inputType = "num") =
                     return false;
                 }
                 break;
-            case "date":
-                if (actualInput.match(/[^0-9\-]+/g)) {
-                    return false;
-                }
-                break;
         }
-
         setValue(actualInput)
 
     }

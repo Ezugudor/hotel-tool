@@ -1,10 +1,6 @@
 import React, { FormEvent, useContext } from "react";
 import { AvailableRoomsContext } from "../../../context";
 import { useInput } from "../../../hooks";
-import { useAvailableRoomProfitEstimator } from "../../../hooks/useAvailableRoomProfitEstimator";
-import { CustomerBids } from "../../../mocks/CustomerBids";
-
-
 interface AvailableRoomFormProps {
     onSubmit?: Function
 }
@@ -15,18 +11,10 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
     const premiumField = useInput();
     const [, setAvailableRooms] = useContext(AvailableRoomsContext);
 
-    //TODO:move this to dashboard
-    // const [estimatedResult, setEstimatedResult] = useAvailableRoomProfitEstimator();
-
     const updateAvailableRoom = (e: FormEvent) => {
         e.preventDefault();
-        const newAvailableRooms = { economy: economyField.value, premium: premiumField.value };
+        const newAvailableRooms = { economy: parseInt(`${economyField.value}`), premium: parseInt(`${premiumField.value}`) };
         setAvailableRooms(newAvailableRooms);
-
-        //TODO:move this to dashboard
-        // const CustomerBidsCopy = [...CustomerBids];
-        // setEstimatedResult(CustomerBidsCopy, economyField.value as number, premiumField.value as number);
-
         onSubmit?.(e);
     }
 
@@ -44,7 +32,6 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
                 </div>
 
                 <button type="submit">Enter</button>
-                {/* {JSON.stringify(estimatedResult)} */}
             </div>
         </form>
     )
