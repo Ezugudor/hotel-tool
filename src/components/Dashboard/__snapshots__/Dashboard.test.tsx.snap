@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard Component Test should match with existing snapshot 1`] = `"<div><div id=\\"stat-box-cont\\"><div><div><span>Rooms:</span><span>0</span></div><div><span>Amount:</span><span>0</span></div></div><div><div><span>Rooms:</span><span>0</span></div><div><span>Amount:</span><span>0</span></div></div><div><div><span>Rooms:</span><span>0</span></div><div><span>Amount:</span><span>0</span></div></div></div></div>"`;

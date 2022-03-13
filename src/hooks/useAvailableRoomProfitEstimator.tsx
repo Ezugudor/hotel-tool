@@ -1,16 +1,13 @@
 import { useContext, useState } from "react";
 import { CustomerContext } from "../context";
 import { countRequests, isPremiumRequest, priceBenchmark } from "../helpers";
-import { RoomCategory } from "../models/RoomCategory";
+import { RoomAggregate, RoomCategory } from "../models";
 
-interface Aggregate {
-    roomCount: number;
-    amount: number;
-}
+
 interface Stats {
-    total: Aggregate;
-    economy: Aggregate;
-    premium: Aggregate;
+    total: RoomAggregate;
+    economy: RoomAggregate;
+    premium: RoomAggregate;
 }
 const defaultValues: Stats = {
     total: {

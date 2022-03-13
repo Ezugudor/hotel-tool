@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import { AvailableRoomsContext, CustomerContext } from "../../../context";
+import { CustomerContext } from "../../../context";
 import { countRequests, sumRequests } from "../../../helpers/Helpers";
 import { RoomCategory } from "../../../models/RoomCategory";
 
 export const CustomerRequestSummary: React.FunctionComponent = () => {
 
     const customerBids = useContext(CustomerContext);
-    const [{ economy, premium }, setAvailableRooms] = useContext(AvailableRoomsContext);
 
 
     return (
@@ -38,7 +37,6 @@ export const CustomerRequestSummary: React.FunctionComponent = () => {
                 <span className="label">Non Premium Requests Amount: </span>
                 <span className="value"> {sumRequests(customerBids, RoomCategory.NON_PREMIUM)} </span>
             </div>
-            <div> {economy} fdfd  {premium}</div>
         </div>
 
     )
