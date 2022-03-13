@@ -14,14 +14,19 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
     const economyField = useInput();
     const premiumField = useInput();
     const [, setAvailableRooms] = useContext(AvailableRoomsContext);
-    const [estimatedResult, setEstimatedResult] = useAvailableRoomProfitEstimator();
+
+    //TODO:move this to dashboard
+    // const [estimatedResult, setEstimatedResult] = useAvailableRoomProfitEstimator();
 
     const updateAvailableRoom = (e: FormEvent) => {
         e.preventDefault();
         const newAvailableRooms = { economy: economyField.value, premium: premiumField.value };
-        // setAvailableRooms(newAvailableRooms);
-        const CustomerBidsCopy = [...CustomerBids];
-        setEstimatedResult(CustomerBidsCopy, economyField.value as number, premiumField.value as number);
+        setAvailableRooms(newAvailableRooms);
+
+        //TODO:move this to dashboard
+        // const CustomerBidsCopy = [...CustomerBids];
+        // setEstimatedResult(CustomerBidsCopy, economyField.value as number, premiumField.value as number);
+
         onSubmit?.(e);
     }
 
@@ -39,7 +44,7 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
                 </div>
 
                 <button type="submit">Enter</button>
-                {JSON.stringify(estimatedResult)}
+                {/* {JSON.stringify(estimatedResult)} */}
             </div>
         </form>
     )

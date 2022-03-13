@@ -1,8 +1,6 @@
 import React from 'react';
-import { mount, ReactWrapper, shallow, ShallowWrapper } from 'enzyme';
+import { mount } from 'enzyme';
 import { AvailableRoomForm } from '.';
-import { fireEvent } from '@testing-library/react';
-
 
 
 let availableRoomFormCont: any;
@@ -10,6 +8,7 @@ let onSubmitHandler: Function;
 let economyField: any;
 let premiumField: any;
 let submitButton: any;
+let ARC: any;
 
 beforeAll(() => {
     onSubmitHandler = jest.fn();
@@ -17,6 +16,7 @@ beforeAll(() => {
     economyField = availableRoomFormCont.find('#economyRoomField').hostNodes();
     premiumField = availableRoomFormCont.find('#premiumRoomField').hostNodes();
     submitButton = availableRoomFormCont.find('button[type="submit"]').hostNodes();
+
 });
 
 
@@ -53,4 +53,13 @@ describe("AvailableRoomForm Component Test", () => {
         availableRoomFormCont.simulate('submit', { preventDefault: () => { } });
         expect(onSubmitHandler).toHaveBeenCalledTimes(1)
     })
+
+    // test('that both premium and economy input field value is the same with what is sent to context', () => {
+
+    //     premiumField.simulate("change", { target: { value: "21" } });
+    //     economyField.simulate("change", { target: { value: "31" } });
+    //     availableRoomFormCont.simulate('submit', { preventDefault: () => { } });
+    // })
+
+
 })
