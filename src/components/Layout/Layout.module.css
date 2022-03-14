@@ -5,7 +5,11 @@
     display:flex;
 }
 .LayLeft{
-    flex:1
+    flex:1;
+    height:100vh;
+    overflow-y:scroll;
+    background:#8b60bd;
+    /* padding-bottom:150px; */
 }
 
 .LayRight{

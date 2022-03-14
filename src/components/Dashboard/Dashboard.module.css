@@ -1,0 +1,76 @@
+.Header{
+    background:#fff;
+    padding:30px;
+    font-size:30px
+}
+
+.StatsCont{
+    display:flex;
+    justify-content:space-between;
+    padding:25px
+}
+
+.PlaceholderWrapper{
+   display:flex;
+   justify-content:space-around;
+   padding-top:50px;
+   /* height:80% */
+}
+.PlaceholderCont{
+    align-self:center;
+    width:70%;
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+.PlaceholderIconCont{
+    padding:20px;
+}
+
+.PlaceholderIconCont i{
+   font-size:7vw;
+   color:#777
+}
+
+.PlaceholderCont h4{
+    font-size:3vw;
+    color:#999
+ }
+ .PlaceholderInfo{
+    font-size:2vw;
+    color:#aaa;
+    text-align:center
+ }
+ .TableCont{
+     /* background:red; */
+     /* height:100vh */
+     padding:0 25px
+ }
+ .TableHeader{
+     display:flex;
+     justify-content:space-between;
+     background:#fff;
+     padding:30px;
+     margin-bottom:5px;
+     align-items:center
+ }
+ .TableHeader input{
+    background:#f1f1f1;
+    border:1px solid #ccc;
+    padding:10px;
+    border-radius:4px
+}
+ .TableCont table{
+     width:100%;
+
+ }
+
+ .TableCont table thead th, .TableCont table tbody td{
+   background:#fff;
+   padding:10px
+    
+}
+.Todo{
+    color:#aaa
+}

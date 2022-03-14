@@ -1,0 +1,45 @@
+.Container{
+    background:#fff;
+    padding:10px;
+    width:30%;
+    display:flex;
+    align-items:center;
+    border-radius:4px
+}
+.IconCont{
+    padding:1.5vw
+}
+
+
+.IconCont i{
+    font-size:4vw
+}
+
+
+.StatsCont{
+    display:flex;
+    justify-content:space-between;
+}
+.InfoCont h4{
+    margin:0;
+    font-size:1.5vw;
+    margin-bottom:1rem;
+    font-weight:normal;
+   
+}
+
+.Info{
+    display:flex;
+    justify-content:space-between;
+    font-size:1.3vw;
+    margin-bottom:5px;
+}
+
+
+.Label{
+    margin-right:30px;
+    color:#777
+}
+.Value{
+    font-weight:bold
+}

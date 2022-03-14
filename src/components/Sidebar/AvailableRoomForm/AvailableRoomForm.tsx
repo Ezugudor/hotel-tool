@@ -17,6 +17,7 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
         const newAvailableRooms = { economy: parseInt(`${economyField.value}`), premium: parseInt(`${premiumField.value}`) };
         setAvailableRooms(newAvailableRooms);
         onSubmit?.(e);
+
     }
 
     return (
@@ -30,11 +31,11 @@ export const AvailableRoomForm: React.FunctionComponent<AvailableRoomFormProps> 
 
                     <div className={styles.FieldCont}>
                         <label htmlFor="premiumRoomField">Premium :</label>
-                        <input type="text" name="economy" id="premiumRoomField" {...premiumField} />
+                        <input type="text" name="premium" id="premiumRoomField" {...premiumField} />
                     </div>
                 </div>
 
-                <button type="submit">Get Outcome</button>
+                <button type="submit">Estimate</button>
             </div>
         </form>
     )
