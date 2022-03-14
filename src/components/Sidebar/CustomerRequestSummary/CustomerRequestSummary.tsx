@@ -20,7 +20,7 @@ export const CustomerRequestSummary: React.FunctionComponent = () => {
                     </div>
                     <div className={styles.RequestInfo}>
                         <span className={styles.RILabel}>Amount: </span>
-                        <span className={styles.RIValue}> € {sumRequests(customerBids)} </span>
+                        <span className={styles.RIValue}> € {sumRequests(customerBids).toLocaleString()} </span>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ export const CustomerRequestSummary: React.FunctionComponent = () => {
                     </div>
                     <div className={styles.RequestInfo}>
                         <span className={styles.RILabel}>Amount: </span>
-                        <span className={styles.RIValue}> € {sumRequests(customerBids, RoomCategory.PREMIUM)} </span>
+                        <span className={styles.RIValue}> € {sumRequests(customerBids, RoomCategory.PREMIUM).toLocaleString()} </span>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ export const CustomerRequestSummary: React.FunctionComponent = () => {
                     </div>
                     <div className={styles.RequestInfo}>
                         <span className={styles.RILabel}>Amount: </span>
-                        <span className={styles.RIValue}> € {sumRequests(customerBids, RoomCategory.NON_PREMIUM)} </span>
+                        <span className={styles.RIValue}> € {sumRequests(customerBids, RoomCategory.NON_PREMIUM).toLocaleString()} </span>
                     </div>
                 </div>
             </div>
